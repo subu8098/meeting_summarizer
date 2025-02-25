@@ -1,8 +1,8 @@
 Coding: 
 
-I along with Mr. Amithesh worked with “meeting summarizing AI agent”, since we learned few necessary things yesterday, we start to write code with the approaches I had. 
+I worked with “meeting summarizing AI agent”, since we learned few necessary things yesterday, we start to write code with the approaches I had. 
 
-We tried with the 1st approach (speech recognizer for both listen and transcribe) I downloaded need libraries, tools and models. 
+I tried with the 1st approach (speech recognizer for both listen and transcribe) I downloaded need libraries, tools and models. 
 
 It takes some time to download the dependencies like speech recognizer, Ollama, llama (LLM), torch and a few more things. 
 
