@@ -1,31 +1,27 @@
-Coding: 
+🚀 Building an AI Agent for Meeting Summarization 🎙️📄
+In my journey to develop an AI-powered Meeting Summarization Agent, I explored multiple approaches to capture and transcribe audio efficiently. Here’s what I discovered:
 
-I worked with “meeting summarizing AI agent”, since we learned few necessary things yesterday, we start to write code with the approaches I had. 
+🔍 Three Approaches I Explored
+1️⃣ SpeechRecognition for both listening & transcription
 
-I tried with the 1st approach (speech recognizer for both listen and transcribe) I downloaded need libraries, tools and models. 
+Used speech_recognition to capture and transcribe external microphone audio.
+Faced challenges with noisy environments and inconsistent accuracy.
+2️⃣ SpeechRecognition for listening & OpenAI's Whisper for transcription
 
-It takes some time to download the dependencies like speech recognizer, Ollama, llama (LLM), torch and a few more things. 
+Combined speech_recognition for capturing and Whisper for transcription.
+Whisper significantly improved accuracy but still required an external microphone.
+3️⃣ Capturing System Audio using Stereo Mix & Whisper for Transcription
 
-Test and debug: 
+Leveraged Stereo Mix to capture internal system audio.
+Used Whisper for transcription, overcoming microphone dependency.
+Integrated Ollama (Llama 3.2) for AI-powered summarization.
+Successfully built a real-time AI agent that listens to meetings, transcribes, and generates concise summaries.
+💡 Challenges & Breakthroughs
+🔹 Detecting system audio input via Stereo Mix setup.
+🔹 Ensuring long-duration listening with a 40s silent timeout for efficient processing.
+🔹 Optimizing Whisper transcription for high accuracy.
+🔹 Summarizing meeting transcripts using Ollama's LLM to generate key insights.
+![image](https://github.com/user-attachments/assets/c9a4f402-1b3d-4929-b6db-cb706821ea04)
 
-The code itself has lots of logic problems, every time run and debug the problem 
-
- 
-
-I also downloaded the gemma (LLM) to test the efficiency over llama and yes it had more clear summarizing over that. 
-
- 
-
-Approach 2: 
-
-Then I tried the 2nd approach, using speech recognizer for listening and whisper from open AI for transcribe. 
-
-It took more time to download whisper and its needed dependencies. 
-
-While working with this approach I faced an issue with ffmpeg, it is a main thing to transcribe audio to text. 
-
-After fixing the issues I got the output from this approach, which is more accurate and effective than the 1st approach. 
-
- 
-
- 
+🎯 Final Outcome
+With this setup, I successfully implemented an AI-powered Meeting Summarization Agent that listens to internal system audio, transcribes it using Whisper, and generates concise summaries using Llama 3.2.
